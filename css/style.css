@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-principal: #171717;
+    --cor-secundaria: #444444;
+    --cor-destaque: #DA0037;
+    --cor-branca: #EDEDED;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+}
+
+section,
+header,
+footer {
+    padding: 0px 100px;
+}
+
+.cabecalho {
+    width: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 115px;
+}
+
+.menu {}
+
+.lista-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+}
+
+.item-lista-menu {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor-branca);
+}
+
+.item-lista-menu:hover {
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.item-redes-sociais {
+    font-size: 30px;
+    text-align: center;
+    color: var(--cor-branca);
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.item-redes-sociais:hover {
+    color: var(--cor-destaque);
+    background-color: var(--cor-branca);
+}
+
+.form-idiomas {
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+.idiomas {
+    width: 60px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--cor-destaque);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.idiomas>* {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background: url(/img/Sobre.png);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sobre-conteudo {
+    width: 1fr;
+    padding: 30% 20% 0 0;
+    position: relative;
+}
+
+.nome {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--cor-branca);
+}
+
+.cargo {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 90%;
+    color: var(--cor-destaque);
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: var(--cor-branca);
+    text-align: justify;
+}
+
+.botoes-sobre{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.botao-sobre {
+    width: 45%;
+    height: 50px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 50%;
+    color: var(--cor-branca);
+    background-color: transparent;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.botao-sobre:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-branca);
+    transition: 0.4s;
+}
+
+.descer {
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+}
+
+.sobre-imagem {
+    width: 1fr;
+    background-image: url(/img/foto\ eduardo.png);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 90%);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
