@@ -10,6 +10,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -32,19 +35,19 @@
             </ul>
         </nav>
         <ul class="redes-sociais">
-            <a href="">
+            <a target="_blank" href="https://github.com/josiastavares">
                 <li class="item-redes-sociais"><i class="fa-brands fa-github"></i></li>
             </a>
-            <a href="">
+            <a target="_blank" href="https://www.linkedin.com/in/eduardodossantostavares/">
                 <li class="item-redes-sociais"><i class="fa-brands fa-linkedin-in"></i></li>
             </a>
-            <a href="">
+            <a target="_blank" href="mailto:eduardosantostavares13@gmail.com">
                 <li class="item-redes-sociais"><i class="fa-regular fa-envelope"></i></li>
             </a>
-            <a href="">
+            <a target="_blank" href="https://wa.me/5511996473145">
                 <li class="item-redes-sociais"><i class="fa-brands fa-whatsapp"></i></li>
             </a>
-            <a href="">
+            <a target="_blank" href="https://www.instagram.com/dev_edutavares/">
                 <li class="item-redes-sociais"><i class="fa-brands fa-instagram"></i></li>
             </a>
         </ul>
@@ -66,100 +69,450 @@
                     cursando Sistemas para Internet na Faculdade FIAP. Além de ter diversos cursos na área, como HTML,
                     CSS, BootsTrap, JS, React, Node e Wordpress</p>
                 <div class="botoes-sobre">
-                    <button class="botao-sobre">Acesse meu Linkedin</button>
-                    <button class="botao-sobre">Acesse meu GitHub</button>
+                    <a href="https://www.linkedin.com/in/eduardodossantostavares/" class="botao-sobre"
+                        target="_blank">Acesse meu Linkedin</button></a>
+                    <a href="https://github.com/josiastavares" class="botao-sobre" target="_blank">Acesse meu GitHub</a>
                 </div>
-                <button class="descer"><i class="fa-solid fa-chevron-down"></i></button>
+                <a class="descer" href="#skills"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
             <div class="sobre-imagem">
             </div>
         </section>
         <section class="skills" id="skills">
-            <h2>Minhas Skills</h2>
-            <div>
-                <h3>Hard Skills</h3>
-                <div>
-                    <h4>HTML e CSS</h4>
-                    <hr>
-                    <progress></progress>
+            <a class="subir" href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+            <h2 class="titulo-secao">Minhas Skills</h2>
+            <div class="hard-skills">
+                <h3 class="subtitulo">Hard Skills</h3>
+                <div class="skill">
+                    <h4 class="titulo-skill">HTML e CSS</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill avancado">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">JavaScript</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill intermediario">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">React</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill basico">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">NodeJS</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill basico">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill ">Wordpress</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill intermediario">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h3>Soft Skills</h3>
-                <div>
-                    <h4>HTML e CSS</h4>
-                    <hr>
-                    <progress></progress>
+            <div class="soft-skills">
+                <h3 class="subtitulo">Soft Skills</h3>
+                <div class="skill">
+                    <h4 class="titulo-skill">Lógica</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill avancado">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">Comunicação</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill intermediario">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">Criatividade</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill avancado">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">Adaptação</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill avancado">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4 class="titulo-skill">Proatividade</h4>
+                    <hr class="linha-skill">
+                    <div class="niveis-skill">
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">basico</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">intermediário</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                        <div class="item-niveis-skill">
+                            <p class="nome-nivel-skill">avançado</p>
+                            <i class="fa-solid fa-chevron-down icone-nivel-skill"></i>
+                        </div>
+                    </div>
+                    <div class="progresso-skill avancado">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="projetos" id="projetos">
-            <h2>Projetos Realizados</h2>
-            <div>
-                <h4>Casa dos Bruxos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in aliquid blanditiis, qui
+            <h2 class="titulo-secao">Projetos Realizados</h2>
+            <div class="item-projeto" style="background-image: url(/img/fundo-casa-dos-bruxos.png);">
+                <h4 class="titulo-projeto">Casa dos Bruxos</h4>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in
+                    aliquid blanditiis, qui
                     exercitationem tempore quam molestias quae veritatis expedita sint veniam, quisquam corrupti maxime
                     unde fugiat voluptatem nulla.</p>
-                <button>Deploy</button>
-                <button>Repositório</button>
-                <button>Layout</button>
+                <div class="caixa-botoes">
+                    <a target="_blank" href="https://casas-dos-bruxos.vercel.app/" class="botao-link">Deploy</a>
+                    <a target="_blank" href="https://github.com/josiastavares/casas-dos-bruxos"><button class="botao-link">Repositório</button></a>
+                    <a target="_blank" href="https://www.figma.com/file/NeFtJcloG79z5p6CjW2qPR/Casas-dos-Bruxos?type=design&node-id=134%3A128&mode=design&t=wkmZpu5XRQ8boJEr-1"><button class="botao-link">Layout</button></a>
+                </div>
             </div>
-            <div>
-                <h4>Casa dos Bruxos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in aliquid blanditiis, qui
+            <div class="item-projeto" style="background-image: url(/img/fundo-superflix.png);">
+                <h4 class="titulo-projeto">Superflix</h4>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in
+                    aliquid blanditiis, qui
                     exercitationem tempore quam molestias quae veritatis expedita sint veniam, quisquam corrupti maxime
                     unde fugiat voluptatem nulla.</p>
-                <button>Deploy</button>
-                <button>Repositório</button>
-                <button>Layout</button>
+                <div class="caixa-botoes">
+                    <a target="_blank" href="https://superflix-chi.vercel.app/" class="botao-link">Deploy</a>
+                    <a target="_blank" href="https://github.com/josiastavares/Releitura-da-Netflix"><button class="botao-link">Repositório</button></a>
+                </div>
             </div>
-            <div>
-                <h4>Casa dos Bruxos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in aliquid blanditiis, qui
+            <div class="item-projeto" style="background-image: url(/img/fundo-organo.png);">
+                <h4 class="titulo-projeto">Organo</h4>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in
+                    aliquid blanditiis, qui
                     exercitationem tempore quam molestias quae veritatis expedita sint veniam, quisquam corrupti maxime
                     unde fugiat voluptatem nulla.</p>
-                <button>Deploy</button>
-                <button>Repositório</button>
-                <button>Layout</button>
+                <div class="caixa-botoes">
+                    <a target="_blank" href="https://organo-two-delta.vercel.app/" class="botao-link">Deploy</a>
+                    <a target="_blank" href="https://github.com/josiastavares/organo"><button class="botao-link">Repositório</button></a>
+                    <a target="_blank" href="https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?type=design&node-id=134%3A128&mode=design&t=j4REt38h3XKgdTH5-1"><button class="botao-link">Layout</button></a>
+                </div>
             </div>
-            <div>
-                <h4>Casa dos Bruxos</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in aliquid blanditiis, qui
+            <div class="item-projeto" style="background-image: url(/img/fundo-jogo-da-cobrinha.png);">
+                <h4 class="titulo-projeto">Jogo da Cobrinha</h4>
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione in
+                    aliquid blanditiis, qui
                     exercitationem tempore quam molestias quae veritatis expedita sint veniam, quisquam corrupti maxime
                     unde fugiat voluptatem nulla.</p>
-                <button>Deploy</button>
-                <button>Repositório</button>
-                <button>Layout</button>
+                <div class="caixa-botoes">
+                    <a target="_blank" href="https://jogo-da-cobrinha-ochre.vercel.app/" class="botao-link">Deploy</a>
+                    <a target="_blank" href="https://github.com/josiastavares/JogoDaCobrinha"><button class="botao-link">Repositório</button></a>
+                </div>
             </div>
-            <button>Acesse todos os projetos</button>
+            <button class="botao-grande">Acesse todos os projetos</button>
         </section>
         <section class="certificacoes" id="certificacoes">
-            <h2>Minhas Certificações</h2>
-            <button>Acesse todos os projetos</button>
+            <h2 class="titulo-secao">Minhas Certificações</h2>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="imagem-card">
+                                    <img src="/img/Domain-Driven-Design-_Java__-Cloud-Computing.png" alt="">
+                                </div>
+                            </div>
+                            <div class="conteudo-card">
+                                <h3 class="nome-certificado">Domain Driven Design(Java), Cloud Computing</h3>
+                                <button class="botao-link">Acessar certificado</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <button class="botao-grande">Acesse todas as certificações</button>
         </section>
-        <footer class="rodapé">
-            <button><i class="fa-solid fa-chevron-down"></i></button>
-            <img src="/img/Logo Sem Fundo.png" alt="Logo escrita Eduardo Tavares e com um simbolo de tag html">
-            <p>© COPYRIGHT | Eduardo Tavares. Todos os direitos reservados.</p>
+        <footer class="rodape">
+            <img class="logo" src="/img/Logo Sem Fundo.png"
+                alt="Logo escrita Eduardo Tavares e com um simbolo de tag html">
+            <p class="copy">© COPYRIGHT | Eduardo Tavares. Todos os direitos reservados.</p>
             <ul class="redes-sociais">
-                <a href="">
+                <a target="_blank" href="https://github.com/josiastavares">
                     <li class="item-redes-sociais"><i class="fa-brands fa-github"></i></li>
                 </a>
-                <a href="">
+                <a target="_blank" href="https://www.linkedin.com/in/eduardodossantostavares/">
                     <li class="item-redes-sociais"><i class="fa-brands fa-linkedin-in"></i></li>
                 </a>
-                <a href="">
+                <a target="_blank" href="mailto:eduardosantostavares13@gmail.com">
                     <li class="item-redes-sociais"><i class="fa-regular fa-envelope"></i></li>
                 </a>
-                <a href="">
+                <a target="_blank" href="https://wa.me/5511996473145">
                     <li class="item-redes-sociais"><i class="fa-brands fa-whatsapp"></i></li>
                 </a>
-                <a href="">
+                <a target="_blank" href="https://www.instagram.com/dev_edutavares/">
                     <li class="item-redes-sociais"><i class="fa-brands fa-instagram"></i></li>
                 </a>
             </ul>
         </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/js/index.js"></script>
+
 </body>
 
 </html>
